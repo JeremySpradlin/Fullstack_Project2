@@ -29,8 +29,8 @@ python load_database.py
 #### Starting the webserver
 ###### Configure App ID and Secret
 For the app to use Facebook authentication, the application ID and Secret must in placed 
-into the `fb_client_secrets_sample.json` file.  The App_ID and App_Secret will be provided 
-in the submission notes.
+into a `fb_client_secrets.json` file.  The file must be created in the project directory, 
+and the App_ID and App_Secret will be provided in the submission notes.
 
 ###### Running the server
 Once the database has been setup and configured, run the following command to start the webserver
@@ -39,4 +39,7 @@ python application.py
 ```
 
 #### Accessing the webpage
-Once the webserver is up and running, you can access the homepage by opening a browser and navigating to `http://localhost:5000`
+Once the webserver is up and running, you can access the homepage by opening a browser and navigating to 
+`https://localhost:5000`.  Since this server is running https, a notice will show up that the 
+site is not secure.  The user must follow their browser's messages to load the website anyway, and the 
+page will load.
