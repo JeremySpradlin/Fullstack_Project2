@@ -16,6 +16,7 @@ If you wish to run this application on a system other than the provided Udacity 
 - [Flask](http://flask.pocoo.org)
 - [SQLAlchemy](https://pypi.org/project/Flask-SQLAlchemy/)
 - [HttpLib2](https://pypi.org/project/httplib2/)
+- [Python Open SSL](https://pyopenssl.org/en/stable/install.html)
 
 #### Installation of web server
 ###### Setup and configure Database
@@ -26,6 +27,12 @@ python load_database.py
 ```
 
 #### Starting the webserver
+###### Configure App ID and Secret
+For the app to use Facebook authentication, the application ID and Secret must in placed 
+into the `fb_client_secrets_sample.json` file.  The App_ID and App_Secret will be provided 
+in the submission notes.
+
+###### Running the server
 Once the database has been setup and configured, run the following command to start the webserver
 ```
 python application.py
